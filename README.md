@@ -131,7 +131,7 @@ Replaces the order of games within a list.
 }
 ```
 
-- **Example response:** `HTTP 204 No Content`
+- **Example response:** `HTTP 200 OK`
 <img src="replacement.png" alt="replacement" />
 ---
 ## Development Environment Setup
