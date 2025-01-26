@@ -28,7 +28,7 @@ The application is based on the domain model below:
 
 ### GET /games
 
-Returns the complete list of games.
+Returns the games with they short description.
 
 - **Example response:**
 
@@ -45,8 +45,9 @@ Returns the complete list of games.
     "shortDescription": "Explore the vast world of Hyrule.",
     "longDescription": "Open-world adventure game that redefines the genre."
   }
-]
+]  
 ```
+<img src="getGames.png" alt="getGames" />
 
 ---
 
@@ -70,10 +71,10 @@ Returns the details of a specific game by ID.
   "longDescription": "Open-world adventure game that redefines the genre."
 }
 ```
-
+<img src="getGamesId.png" alt="getGamesId" />
 ---
 
-### GET /game-lists
+### GET /lists
 
 Returns all registered game lists.
 
@@ -91,10 +92,10 @@ Returns all registered game lists.
   }
 ]
 ```
-
+<img src="getLists.png" alt="getLists" />
 ---
 
-### GET /game-lists/{id}/games
+### GET /lists/{id}/games
 
 Returns all games associated with a specific list.
 
@@ -113,10 +114,10 @@ Returns all games associated with a specific list.
   }
 ]
 ```
-
+<img src="getGamesOnList.png" alt="getGamesOnList" />
 ---
 
-### POST /game-lists/{id}/replacement
+### POST /lists/{id}/replacement
 
 Replaces the order of games within a list.
 
@@ -131,7 +132,8 @@ Replaces the order of games within a list.
 ```
 
 - **Example response:** `HTTP 204 No Content`
-
+<img src="replacement.png" alt="replacement" />
+---
 ## Development Environment Setup
 
 1. Clone this repository:
